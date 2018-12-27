@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+    html {
+        font-family : proxima nova, sans-serif;
+    }
+    .container-fluid {
+        background-image : url(CachedImage_1024_768_POS4.jpg);
+        background-position : center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 1000px;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right:auto;
+        margin-left:auto
+    }
+    .row {
+        margin-right: 0px;
+    }
+    body {
+        background-color: #1F1F24;
+        width : 100%;
+        margin: 0 0 0 0;
+    }
+    .clearfix ::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    h1 {
+        color: white;
+        font-size: 150px;
+    }
+    h2 {
+        color: white;
+        font-size: 100px;
+    }
+    h3 {
+        color: white;
+        font-size: 50px;
+    }
+    p {
+        color: white;
+        font-size: 26px;
+        font-family: consolas;
+    }
+    ul {
+        list-style:none;
+        margin-top: 16px;
+    }
+    li {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    /*-----nav-----*/
+    nav {
+        height: 100px;
+        line-height: 100px;
+    }
+    nav a {
+        color: white;
+        font-family: consolas;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 36px;
+    }
+    nav a:first-child {
+        float: left;
+    }
+
+    nav a:nth-child(2) {
+        float: right;
+    }
+    nav a:nth-child(3) {
+        float: right;
+        margin-right: 100px;
+    }
+    /*-----header-----*/
+    header {
+        margin: 400px 0 100px 50px;
+        text-align: left;
+    }
+
+    /*-----intro-----*/
+    .intro {
+        text-align: center;
+        margin: 0 600px 100px 600px;
+    }
+    .intro img {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+
+    }
+    /*-----languages-----*/
+    .languages {
+        background-color: #25272C;
+        width: 40%;
+        min-height: 400px;
+        z-index : 1;
+        box-shadow: 0px 0px 6px black;
+    }
+    .languages h2 {
+        margin-left: 30px;
+    }
+    .row li {
+        font-family: consolas;
+        font-size: 26px;
+        position: relative;
+    }
+
+    .languages ul li span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    .languages ul li span:after {
+        content: '';
+        width: 101%;
+        height: 7px;
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        background-color: #FF4A5E;
+        z-index: -1;
+    }
+    /*-----skills-----*/
+    .skills {
+        background-color: #25272C;
+        width: 50%;
+        min-height: 400px;
+        text-align: right;
+        padding-right: 30px;
+        margin-left:auto;
+        margin-right 0;
+        box-shadow: 0px 0px 6px black;
+    }
+    .skills ul li span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    .skills ul li span:after {
+        content: '';
+        width: 101%;
+        height: 7px;
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        background-color: #13A3FD;
+        z-index: -1;
+    }
+    </style>
+    <script src = "https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type = "text/javascript">
+        $(window).on('scroll'), function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class = "container-fluid">
+        <nav class = "clearfix">
+            <a href = "#">Eric Yan</a>
+            <a href = "#">About</a>
+            <a href = "#">Contact</a>
+        </nav>
+        <header>
+            <h1>Hi There.</h1>
+            <h3>Allow me to introduce myself...</h3>
+        </header>
+    </div>
+    <div class = "intro">
+        <img src="profile.jpg" alt="Avatar">
+        <h2>I'm Eric.</h2>
+        <p>I'm a second year CS major at Georgia Tech
+            with concentrations in Intelligence
+            and Information Internetworks. I have a passion
+            for web and mobile development and I love to create
+            things for fun.</p>
+    </div>
+    <div class = "row">
+        <div class = "languages">
+            <h2>Languages</h2>
+            <ul>
+                <li><span>Java</span></li>
+                <li><span>Python</span></li>
+                <li><span>HTML/CSS</span></li>
+                <li><span>Javascript</span></li>
+            </ul>
+        </div>
+        <div class = "skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><span>Object Oriented Design/Programming</span></li>
+                <li><span>Front-End Development</span></li>
+                <li><span>Back-End Development</span></li>
+                <li><span>Android Development</span></li>
+                <li><span>UI Design</li>
+            </ul>
+        </div>
+    </div>
+    <h3> hi</h3>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

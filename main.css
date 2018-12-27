@@ -1,0 +1,93 @@
+/*-----Global-----*/
+* {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    outline : 0;
+    font-size : 100%;
+    vertical-align : baseline;
+}
+html {
+    font-family : proxima nova, sans-serif;
+}
+body {
+    background-color: #1F1F24;
+    width : 95%;
+    margin: 0 0 0 0;
+}
+.clearfix ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+h1 {
+    color: white;
+    font-size: 150px;
+}
+h2 {
+    color: white;
+    font-size: 100px;
+}
+h3 {
+    color: white;
+    font-size: 50px;
+}
+p {
+    color: white;
+    font-size: 26px;
+    font-family: consolas;
+}
+ul {
+    list-style:none;
+    margin-top: 16px;
+}
+li {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/*-----nav-----*/
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+nav a {
+    color: white;
+    font-family: consolas;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 36px;
+}
+nav a:first-child {
+    float: left;
+}
+nav a:nth-child(3) {
+    float: right;
+}
+nav a:nth-child(2) {
+    float: right;
+}
+/*-----top-----*/
+.top {
+    background-image : url(CachedImage_1024_768_POS4.jpg);
+    background-position : top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-----header-----*/
+header {
+    margin: 250px 500px 250px 50px;
+    text-align: left;
+}
+
+header h3 {
+    margin: 0 auto 500px auto;
+}
+/*-----intro-----*/
+.intro {
+    text-align: center;
+    margin: 100px 600px 0 600px;
+}
+
+/*-----languages-----*/
+/*-----skills-----*/
